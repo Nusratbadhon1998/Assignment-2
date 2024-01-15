@@ -37,6 +37,7 @@
     color: var(--primary-para-color);
     font-size: 1rem;
     font-weight: var(--normal);
+    line-height: 1.6rem;
 }
 
 .primary-btn {
@@ -207,18 +208,16 @@ select:hover {
 /* ************************************************* */
 /* destination section starts here */
 
-.destination-container {
+.section-container {
     margin-top: 40px;
     text-align: center;
 }
 
-.destination-container * {
-    margin-bottom: 30px;
-}
 
-.destination-content-container .section-para {
+
+.section-content-container .section-para {
     width: 50%;
-    margin: 0px auto;
+    margin: 30px auto;
 }
 
 .destination-grid-container {
@@ -277,12 +276,66 @@ select:hover {
     /* transform: translate(-50%, -50%); */
 }
 
+/* Photo-grid section ends here */
+/* ********************************************** */
+
+/* ************************************************** */
+/* Why choose us section starts here */
+
+.card-container .card{
+    border-radius: 16px;
+    padding: 20px;
+    /* width: 45%; */
+    height: 284px;
+    text-align: left;
+    
+
+}
 
 
 
+.card-container .card .section-title{
+    font-size: 1.5rem;
+    margin: 20px 0px;
 
+}
+.card-container .section-para{
+    color:var(--secondary-para-color);
+}
+.card-container #card-1{
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+grid-column: 1/7;
+grid-row: 1/2;
+}
 
+.card-container #card-2{
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+grid-column: 7/13;
+grid-row: 1/2;
+}
 
+.card-container #card-3{
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+
+grid-column: 4/10;
+grid-row: 2/3;
+}
+
+.card-img{
+    display: flex;
+    justify-content: flex-start;
+/* margin-bottom: 20px */
+;}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,284px);
+    gap: 20px;
+}
 
 
 
@@ -355,12 +408,12 @@ select:hover {
     }
 
     .popular-tour-container .section-title,
-    .destination-content-container .section-title {
+    .section-content-container .section-title {
         font-size: 1.6rem;
     }
 
     .popular-tour-container .section-para,
-    .destination-content-container .section-para {
+    .section-content-container .section-para {
         width: 100%;
         text-align: center;
     }
@@ -428,6 +481,34 @@ select:hover {
         height: 300px;
 
     }
+/* why choose us section */
 
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,300px);
+    gap: 20px;
+}
+
+.card{
+    padding: 20px;
+}
+.card-container #card-1{
+ 
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+    
+    .card-container #card-2{
+    
+    grid-column: 1/2;
+    grid-row: 2/3;
+    }
+    
+    .card-container #card-3{
+    
+    grid-column: 1/2;
+    grid-row: 3/4;
+    }
 
 }
