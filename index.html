@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ninja Travelers</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="./Images/icons8-ninja-emoji-48.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Images/icons8-plane-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,12 +30,20 @@
             <nav>
 
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#"> <span>Home</span>
+                        </a></li>
                     <li><a href="#">Packages</a></li>
                     <li><a href="#">Testimonial</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
+                    
+
+
                 </ul>
+                <input type="checkbox" name="" id="check">
+                    <label for="check" class="check-btn">
+                        <i class="fa fa-bars" style="font-size:24px"></i>
+                    </label>
             </nav>
         </div>
         <!-- Navigation section ends here -->
@@ -317,21 +326,24 @@
             <div class="text-content">
                 <h3 class="section-title">A Simple Perfect Place To Get Lost</h3>
 
-                <p class="section-para">Explore the natural wonders that define Bangladesh's beauty.Each destination unveils a breathtaking canvas of diverse landscapes.
+                <p class="section-para">Explore the natural wonders that define Bangladesh's beauty.Each destination
+                    unveils a breathtaking canvas of diverse landscapes.
 
                 </p>
-                <ul >
+                <ul>
 
                     <li>The Bay of Bengal's azure waters meet the horizon in a breathtaking panorama. </li>
-                   
-                    <li> Explore nearby attractions such as the fishing port of Cox's Bazar, where you can witness the vibrant hustle and bustle of local life. </li>
+
+                    <li> Explore nearby attractions such as the fishing port of Cox's Bazar, where you can witness the
+                        vibrant hustle and bustle of local life. </li>
                 </ul>
 
-              
+
                 <button class="primary-btn">See More</button>
             </div>
             <div class=" video-container">
-                <video src="./Images/video (2160p).mp4" controls muted  playsinline poster="./Images/Group 40089.png"></video>
+                <video src="./Images/video (2160p).mp4" controls muted playsinline
+                    poster="./Images/Group 40089.png"></video>
                 <div class="video-title">
                     <h2>Watch Our Sea in Bangladesh</h2>
                 </div>
@@ -344,10 +356,131 @@
         <!-- Rewards section 2 ends here -->
         <!-- ***************************************************8 -->
 
+        <!-- Extra section for bonus -->
+
+        <section class="container" id="bonus">
+            <h3 class="section-title">Travelers Say About Us
+            </h3>
+            <p class="section-para">Etiam ac tortor id purus commodo vulputate. Vestibulum porttitor erat felis and sed
+                vehicula tortor malesuada gravida. Mauris volutpat enim quis</p>
+            <div class="review-card-container">
+
+                <div class="review-card">
+                    <div class="star">
+
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                    </div>
+
+                    <h3 class="section-title">Journey Beautiful Indonesia</h3>
+                    <p class="section-para">I cannot express enough how satisfied I am with the webgot deve services
+                        provided by Egens Lab from the initial</p>
+                    <div class="author">
+                        <img src="./Images/testi-author-img1.png" alt="">
+                    </div>
+                    <h3 class="section-title">Liam Nohkan</h3>
+                    <p class="section-para">CEO, TourExPro</p>
+
+                </div>
+                <div class="review-card" id="middle-review-card">
+                    <div class="star">
+
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                    </div>
+
+                    <h3 class="section-title">Cultural Immersion at Its Best</h3>
+                    <p class="section-para">I cannot express enough how satisfied I am with the webgot deve services
+                        provided by Egens Lab from the initial</p>
+                    <div class="author">
+                        <img src="./Images/testi-author-img2.png" alt="">
+                    </div>
+                    <h3 class="section-title">Jon mark</h3>
+                    <p class="section-para">Founder, Tourio</p>
+
+                </div>
+                <div class="review-card">
+                    <div class="star">
+
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                        <img src="./Images/full-star.png" alt="">
+                    </div>
+
+                    <h3 class="section-title">Memories That Will Last Forever</h3>
+                    <p class="section-para">I cannot express enough how satisfied I am with the webgot deve services
+                        provided by Egens Lab from the initial</p>
+                    <div class="author">
+                        <img src="./Images/testi-author-img3.png" alt="">
+                    </div>
+                    <h3 class="section-title">Jordan Moria</h3>
+                    <p class="section-para">CEO, Touristo</p>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- Extra section ends here -->
+
+        <!-- Newsletter section starts here -->
+        <section class="container text-img-container" id="newsletter">
+            <div class="text-content">
+
+                <h3 class="section-title">Newsletter</h3>
+                <p class="section-para">Get your daily dose of travel news & tips. Sign up today!</p>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Enter your name">
+                    <input type="email" name="" id="" placeholder="Enter your email">
+                </form>
+                <button class="primary-btn">Subscribe</button>
+            </div>
+            <div class="img-container">
+                <img src="./Images/Rectangle 8 (1).png" alt="">
+                <div class="box">
+                    <p>Travel.com</p> <br>
+                    <h2>Save up to 70%</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter section starts here -->
+
 
 
     </main>
     <footer>
+        <div class="container">
+
+            <div class="logo-container">
+                <div class="logo-img">
+                    <img src="./Images/Group 40071 (2).png" alt="">
+                </div>
+                <div class="logo-name">
+                    <h3 class="section-title">Ninja <span>Travelers</span></h3>
+                    
+                </div>
+            </div>
+            
+            <p class="section-para">Our dedicated customer service team is ready to assist you. Stay connected with us on social media for the latest updates, travel tips, and exclusive offers.</p>
+            <div class="footer-icon">
+
+                <img src="./Images/icons8-twitter-50.png" alt="">
+                <img src="./Images/icons8-website-50.png" alt="">
+                <img src="./Images/icons8-youtube-50.png" alt="">
+                <img src="./Images/icons8-fb-50.png" alt="">
+            </div>
+            <hr>
+
+            <p class="section-para">2023 @ All rights are reserved</p>
+            
+        </div>
 
     </footer>
 </body>
