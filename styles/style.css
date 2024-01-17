@@ -227,8 +227,8 @@ select:hover {
     margin-left: 30px;
 }
 
-.text-content p:nth-last-child(2){
-    color: var(--secondary-para-color);
+.text-content p:nth-last-child(2) {
+    color: var(--);
 }
 
 .text-content button {
@@ -637,7 +637,7 @@ hr {
     background: var(--secondary-para-color);
 }
 
-footer .section-para{
+footer .section-para {
     color: var(--primary-text-color);
 }
 
@@ -646,25 +646,57 @@ footer .section-para{
 
 /* Responsive design */
 /* ****************************************** */
+
+/* small device */
+
+@media screen and (max-width:481px) {
+    .card-container .card {
+        width: 100%;
+        min-height: 20vh;
+        overflow: hidden;
+    }
+
+    .video-container h2 {
+        color: white;
+        font-size: .9rem;
+        transform: translate(50px, -135px);
+     width: max-content;
+    }
+
+    #newsletter .box h2 {
+        font-size: 1rem;
+    }
+
+    #newsletter .box{
+        width: 46%;
+        height: 92px
+    }
+}
+
 /* Mobile Screen */
 
 @media screen and (max-width:600px) {
 
 
-.logo-container .section-title {
-    font-size: 1.2rem;
-}
+    .logo-container .section-title {
+        font-size: 1.2rem;
+    }
 
-.logo-container .logo-img img {
-    width: 40px;
-    height: 40px;
-}
+    .logo-container .logo-img img {
+        width: 40px;
+        height: 40px;
+    }
 
-.check-btn {
-    display: block;
-}
-nav ul{
-    /* display: none; */
+    .check-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* nav ul{
+     display: none;
    flex-direction: column;
    background-color: #babab3e5;
    position: absolute;
@@ -687,233 +719,229 @@ a:hover{
 }
 #check:checked nav ul{
     left:0%
-}
+}  */
 
-form,
-.text-img-container,
-.review-card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+    form,
+    .text-img-container,
+    .review-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-/* nav {
-    justify-content: center;
-} */
 
-/* navigation ends */
 
-/* banner responsive */
+    .banner-section {
+        padding: 20px;
+    }
 
-.banner-section {
-    padding: 20px;
-}
+    .banner-section .banner-title {
+        font-size: 1.4rem;
+    }
 
-.banner-section .banner-title {
-    font-size: 1.4rem;
-}
+    .banner-section .section-para {
+        font-size: .9rem;
+    }
 
-.banner-section .section-para {
-    font-size: .9rem;
-}
+    input,
+    select,
+    form .primary-btn,
+    .review-card {
+        width: 100%;
+    }
 
-input,
-select,
-form .primary-btn,
-.review-card {
-    width: 100%;
-}
+    form .primary-btn {
+        width: 100%;
+    }
 
-form .primary-btn {
-    width: 100%;
-}
+    /* ****************************** */
+    /* Popular tours */
+    .text-img-container,
+    .deal-card-container {
+        padding: 0px;
+    }
 
-/* ****************************** */
-/* Popular tours */
-.text-img-container,
-.deal-card-container {
-    padding: 0px;
-}
+    .text-content {
+        width: 100%;
+        text-align: left;
+    }
 
-.text-content {
-    width: 100%;
-    text-align: left;
-}
+    .text-img-container .section-title,
+    .section-content-container .section-title {
+        font-size: 1.6rem;
+    }
 
-.text-img-container .section-title,
-.section-content-container .section-title {
-    font-size: 1.6rem;
-}
 
+    .section-content-container .section-para,
+    #bonus .section-para,
+    footer .section-para {
+        width: 100%;
+        text-align: center;
+    }
 
-.section-content-container .section-para,
-#bonus .section-para, footer .section-para {
-    width: 100%;
-    text-align: center;
-}
+    .text-content button {
+        width: 40%;
+    }
 
-.text-content button {
-    width: 40%;
-}
+    /* *********************************** */
 
-/* *********************************** */
+    /* Photo grid section */
 
-/* Photo grid section */
+    .destination-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 300px);
 
-.destination-grid-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 300px);
+    }
 
-}
 
+    #item1 {
+        grid-column: 1/13;
 
-#item1 {
-    grid-column: 1/13;
+        grid-row: 1/2;
+    }
 
-    grid-row: 1/2;
-}
+    #item2 {
+        grid-column: 1/13;
 
-#item2 {
-    grid-column: 1/13;
+        grid-row: 2/3;
 
-    grid-row: 2/3;
+    }
 
-}
+    #item3 {
+        grid-column: 1/13;
 
-#item3 {
-    grid-column: 1/13;
+        grid-row: 3/4;
 
-    grid-row: 3/4;
+    }
 
-}
+    #item4 {
+        grid-column: 1/13;
 
-#item4 {
-    grid-column: 1/13;
+        grid-row: 4/5;
 
-    grid-row: 4/5;
+    }
 
-}
+    #item5 {
+        grid-column: 1/13;
 
-#item5 {
-    grid-column: 1/13;
+        grid-row: 5/6;
+    }
 
-    grid-row: 5/6;
-}
+    #item6 {
+        grid-column: 1/13;
 
-#item6 {
-    grid-column: 1/13;
+        grid-row: 6/7;
+    }
 
-    grid-row: 6/7;
-}
+    #item7 {
+        grid-column: 1/13;
 
-#item7 {
-    grid-column: 1/13;
+        grid-row: 7/8;
+    }
 
-    grid-row: 7/8;
-}
+    .destination-grid-container img {
+        width: 100%;
+        height: 300px;
 
-.destination-grid-container img {
-    width: 100%;
-    height: 300px;
+    }
 
-}
+    /* ********************************************* */
+    /* why choose us section */
 
-/* ********************************************* */
-/* why choose us section */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        gap: 20px;
+        min-height: 20vh;
+    }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    gap: 20px;
-}
+    .card {
+        padding: 20px;
+    }
 
-.card {
-    padding: 20px;
-}
+    .card-container #card-1 {
 
-.card-container #card-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
+    .card-container #card-2 {
 
-.card-container #card-2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
 
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
+    .card-container #card-3 {
 
-.card-container #card-3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
 
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
+    /* ***************************************** */
 
-/* ***************************************** */
 
+    /*deals and discounts section */
+    .deal-card-container {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
 
-/*deals and discounts section */
-.deal-card-container {
-    padding-top: 150px;
-    padding-bottom: 50px;
-}
+    .deal-card-container .deal-card {
+        width: 80%;
+        padding: 30px;
+        margin: 0px auto;
+    }
 
-.deal-card-container .deal-card {
-    width: 80%;
-    padding: 30px;
-    margin: 0px auto;
-}
 
+    .deal-card .price {
+        font-size: 1rem;
 
-.deal-card .price {
-    font-size: 1rem;
+    }
 
-}
+    .deal-card-container button {
+        width: 50%;
+    }
 
-.deal-card-container button {
-    width: 50%;
-}
+    .icons {
+        flex-wrap: wrap;
+    }
 
-.icons {
-    flex-wrap: wrap;
-}
+    .icons div:first-child {
+        flex-basis: 200px;
+    }
 
-.icons div:first-child {
-    flex-basis: 200px;
-}
+    .discount-btn {
+        width: 60%;
+    }
 
-.discount-btn {
-    width: 60%;
-}
+    /* ***************************** */
+    .rewards .video-container {
 
-/* ***************************** */
-.rewards .video-container {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
 
-    /* border: 2px solid red; */
-    width: 100%;
-}
+    .video-container video {
+        width: 100%;
+        object-fit: cover;
+    }
 
-.video-container video {
-    width: 100%;
-    object-fit: cover;
-}
 
+    .video-container h2 {
+        color: white;
+        transform: translate(50px, -200px);
+        width: max-content;
+    }
 
-.video-container h2 {
-    color: white;
-    transform: translate(50px, -200px);
-    width: max-content;
-}
+    #middle-review-card {
+        position: static;
+    }
 
-#middle-review-card {
-    position: static;
-}
 
-
-hr{
-    width:70%
-}
+    hr {
+        width: 70%
+    }
 
 
 }
@@ -922,277 +950,250 @@ hr{
 
 @media screen and (min-width:601px) and (max-width:991px) {
 
-        /* navigation section responsive */
 
 
-/* nav ul li a {
-    display: none;
-} */
+    .logo-container .section-title {
+        font-size: 1.2rem;
+    }
+
+    .logo-container .logo-img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .check-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+       
+    }
 
 
-.logo-container .section-title {
-    font-size: 1.2rem;
+    form,
+    .text-img-container,
+    .review-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .banner-section {
+        padding: 20px;
+    }
+
+    .banner-section .banner-title {
+        font-size: 1.4rem;
+    }
+
+    .banner-section .section-para {
+        font-size: .9rem;
+    }
+
+    input,
+    select,
+    form .primary-btn,
+    .review-card {
+        width: 100%;
+    }
+
+    form .primary-btn {
+        width: 100%;
+    }
+
+    /* ****************************** */
+    /* Popular tours */
+    .text-img-container,
+    .deal-card-container {
+        padding: 0px;
+    }
+
+    .text-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .text-img-container .section-title,
+    .section-content-container .section-title {
+        font-size: 1.6rem;
+    }
+
+
+    .section-content-container .section-para,
+    #bonus .section-para,
+    footer .section-para {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-content button {
+        width: 40%;
+    }
+
+    /* *********************************** */
+
+    /* Photo grid section */
+
+    .destination-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 300px);
+
+    }
+
+
+    #item1 {
+        grid-column: 1/13;
+
+        grid-row: 1/2;
+    }
+
+    #item2 {
+        grid-column: 1/13;
+
+        grid-row: 2/3;
+
+    }
+
+    #item3 {
+        grid-column: 1/13;
+
+        grid-row: 3/4;
+
+    }
+
+    #item4 {
+        grid-column: 1/13;
+
+        grid-row: 4/5;
+
+    }
+
+    #item5 {
+        grid-column: 1/13;
+
+        grid-row: 5/6;
+    }
+
+    #item6 {
+        grid-column: 1/13;
+
+        grid-row: 6/7;
+    }
+
+    #item7 {
+        grid-column: 1/13;
+
+        grid-row: 7/8;
+    }
+
+    .destination-grid-container img {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    /* ********************************************* */
+    /* why choose us section */
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-container #card-1 {
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .card-container #card-2 {
+
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .card-container #card-3 {
+
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    /* ***************************************** */
+
+
+    /*deals and discounts section */
+    .deal-card-container {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .deal-card-container .deal-card {
+        width: 80%;
+        padding: 30px;
+        margin: 0px auto;
+    }
+
+
+    .deal-card .price {
+        font-size: 1rem;
+
+    }
+
+    .deal-card-container button {
+        width: 50%;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+    }
+
+    .icons div:first-child {
+        flex-basis: 200px;
+    }
+
+    .discount-btn {
+        width: 60%;
+    }
+
+    /* ***************************** */
+    .rewards .video-container {
+
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    .video-container video {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .video-container h2 {
+        color: white;
+        transform: translate(50px, -200px);
+        width: max-content;
+    }
+
+    #middle-review-card {
+        position: static;
+    }
+
+
+    hr {
+        width: 70%
+    }
+
+
 }
-
-.logo-container .logo-img img {
-    width: 40px;
-    height: 40px;
-}
-
-.check-btn {
-    display: block;
-}
-nav ul{
-    /* display: none; */
-   flex-direction: column;
-   background-color: #babab3e5;
-   position: absolute;
-   color:white;
-   top:120px;
-   right:10px;
-   width:80%;
-   height:80%;
-   align-items: center;
-   padding-top: 100px;
-   transition: all .6s;
-   left:-100%;
-}
-nav ul li a{
-    font-size: 1rem;
-}
-
-a:hover{
-    background-color: rgba(240, 248, 255, 0.543);
-}
-#check:checked nav ul{
-    left:0%
-}
-
-form,
-.text-img-container,
-.review-card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* nav {
-    justify-content: center;
-} */
-
-/* navigation ends */
-
-/* banner responsive */
-
-.banner-section {
-    padding: 20px;
-}
-
-.banner-section .banner-title {
-    font-size: 1.4rem;
-}
-
-.banner-section .section-para {
-    font-size: .9rem;
-}
-
-input,
-select,
-form .primary-btn,
-.review-card {
-    width: 100%;
-}
-
-form .primary-btn {
-    width: 100%;
-}
-
-/* ****************************** */
-/* Popular tours */
-.text-img-container,
-.deal-card-container {
-    padding: 0px;
-}
-
-.text-content {
-    width: 100%;
-    text-align: left;
-}
-
-.text-img-container .section-title,
-.section-content-container .section-title {
-    font-size: 1.6rem;
-}
-
-
-.section-content-container .section-para,
-#bonus .section-para, footer .section-para {
-    width: 100%;
-    text-align: center;
-}
-
-.text-content button {
-    width: 40%;
-}
-
-/* *********************************** */
-
-/* Photo grid section */
-
-.destination-grid-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 300px);
-
-}
-
-
-#item1 {
-    grid-column: 1/13;
-
-    grid-row: 1/2;
-}
-
-#item2 {
-    grid-column: 1/13;
-
-    grid-row: 2/3;
-
-}
-
-#item3 {
-    grid-column: 1/13;
-
-    grid-row: 3/4;
-
-}
-
-#item4 {
-    grid-column: 1/13;
-
-    grid-row: 4/5;
-
-}
-
-#item5 {
-    grid-column: 1/13;
-
-    grid-row: 5/6;
-}
-
-#item6 {
-    grid-column: 1/13;
-
-    grid-row: 6/7;
-}
-
-#item7 {
-    grid-column: 1/13;
-
-    grid-row: 7/8;
-}
-
-.destination-grid-container img {
-    width: 100%;
-    height: 300px;
-
-}
-
-/* ********************************************* */
-/* why choose us section */
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    gap: 20px;
-}
-
-.card {
-    padding: 20px;
-}
-
-.card-container #card-1 {
-
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.card-container #card-2 {
-
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.card-container #card-3 {
-
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-/* ***************************************** */
-
-
-/*deals and discounts section */
-.deal-card-container {
-    padding-top: 150px;
-    padding-bottom: 50px;
-}
-
-.deal-card-container .deal-card {
-    width: 80%;
-    padding: 30px;
-    margin: 0px auto;
-}
-
-
-.deal-card .price {
-    font-size: 1rem;
-
-}
-
-.deal-card-container button {
-    width: 50%;
-}
-
-.icons {
-    flex-wrap: wrap;
-}
-
-.icons div:first-child {
-    flex-basis: 200px;
-}
-
-.discount-btn {
-    width: 60%;
-}
-
-/* ***************************** */
-.rewards .video-container {
-
-    /* border: 2px solid red; */
-    width: 100%;
-}
-
-.video-container video {
-    width: 100%;
-    object-fit: cover;
-}
-
-
-.video-container h2 {
-    color: white;
-    transform: translate(50px, -200px);
-    width: max-content;
-}
-
-#middle-review-card {
-    position: static;
-}
-
-
-hr{
-    width:70%
-}
-
+/* desktop responsive */
+@media screen and (min-width:992px){
 
 }
